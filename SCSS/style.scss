@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+body {
+    position: relative;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    header {
+        width: 100%;
+        padding: 5em 0;
+        background-image: url('/images/image 36.png');
+        
+        background-color: black;
+        color: white;
+
+        .width-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            max-width: 800px;
+
+            button {
+                display: block;
+                background: none;
+                border: none;
+                color: white;
+                
+        
+                a:visited {
+                    color: white;
+                }
+            }  
+
+        }    
+    }
+
+    .form-container{
+        position: relative;
+
+        form {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -1em;
+            margin: 0 auto;
+
+            img {
+                background-color: white;
+                border: none;
+                border-radius: 3px 0 0 3px;
+                background-color: #2E2E2F;
+                padding: .5em;
+                height: 2.5em;
+            }
+
+            input[type="search"] {
+                font-size: 1rem;
+                padding: .5em;
+                border: none;
+                width: 60%;
+                max-width: 500px;
+                height: 2.5em;
+                background-color: #2E2E2F;
+                color: #A5A5A5;
+            }
+
+            #search-btn {
+                height: 2.5em;
+                font-size: 1rem;
+                background-color: #4B4B4B;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 0 3px 3px 0;
+                padding: .5em 1em;
+            }
+        }
+
+    }
+
+    main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        
+        
+        .width-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .2em;
+            width: 75%;
+            max-width: 500px;
+
+            img {
+                width: 100px;
+            }
+            
+            p {
+                color: #787878;
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: 900;
+            }
+        }
+
+        .none {
+            display: none;
+        } 
+
+        .info-section {
+            width: 100%;
+            
+
+            .info-width-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                max-width: 800px;
+                gap: 1.5em;
+                margin: 2em auto 0;
+                border-bottom: 2px solid #4B4B4B;
+                padding-bottom: 1em;
+    
+                .movie-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .7em;
+
+                    .movie-info-top {
+                        display: flex;
+                        align-items: center;
+                        gap: .4em;
+                        
+                        h2 {
+                            font-size: 1.2rem;
+                            color: white;
+                            font-weight: 400;
+                        }
+        
+                        .rating {
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+        
+                            img {
+                                width: 15px;
+                                height: 15px;
+                            }
+                            
+                            .p-info {
+                                padding-top: 2px;
+                                color: white;
+                                font-size: .8rem;
+                                font-weight: 200;
+                            }
+                        }
+                    }
+    
+                    .movie-info-middle {
+                        display: flex;
+                        gap: 2em;
+                        font-size: .8rem;
+                        font-weight: 200;
+        
+                        .p-info {
+                            color: white;
+                        }
+        
+                        button {
+                            
+                            background-color: transparent;
+                            border: none;
+                            color: white;
+                            font-weight: 200;
+                            display: flex;
+                            gap: .3em;
+                            cursor: pointer;
+    
+                        }
+                    }
+    
+                    .description {
+                        color: #787878;
+                    }
+                }  
+                
+            }
+        }
+
+        
+    }
+    
+}
+
+
+

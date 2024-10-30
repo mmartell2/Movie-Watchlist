@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body header {
+  width: 100%;
+  padding: 5em 0;
+  background-image: url("/images/image 36.png");
+  background-color: black;
+  color: white;
+}
+body header .width-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+body header .width-container button {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+}
+body header .width-container button a:visited {
+  color: white;
+}
+body .form-container {
+  position: relative;
+}
+body .form-container form {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -1em;
+  margin: 0 auto;
+}
+body .form-container form img {
+  background-color: white;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  background-color: #2E2E2F;
+  padding: 0.5em;
+  height: 2.5em;
+}
+body .form-container form input[type=search] {
+  font-size: 1rem;
+  padding: 0.5em;
+  border: none;
+  width: 60%;
+  max-width: 500px;
+  height: 2.5em;
+  background-color: #2E2E2F;
+  color: #A5A5A5;
+}
+body .form-container form #search-btn {
+  height: 2.5em;
+  font-size: 1rem;
+  background-color: #4B4B4B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  padding: 0.5em 1em;
+}
+body main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+body main .width-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+  width: 75%;
+  max-width: 500px;
+}
+body main .width-container img {
+  width: 100px;
+}
+body main .width-container p {
+  color: #787878;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+body main .none {
+  display: none;
+}
+body main .info-section {
+  width: 100%;
+}
+body main .info-section .info-width-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+  gap: 1.5em;
+  margin: 2em auto 0;
+  border-bottom: 2px solid #4B4B4B;
+  padding-bottom: 1em;
+}
+body main .info-section .info-width-container .movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+body main .info-section .info-width-container .movie-info .movie-info-top {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+body main .info-section .info-width-container .movie-info .movie-info-top h2 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 400;
+}
+body main .info-section .info-width-container .movie-info .movie-info-top .rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body main .info-section .info-width-container .movie-info .movie-info-top .rating img {
+  width: 15px;
+  height: 15px;
+}
+body main .info-section .info-width-container .movie-info .movie-info-top .rating .p-info {
+  padding-top: 2px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+body main .info-section .info-width-container .movie-info .movie-info-middle {
+  display: flex;
+  gap: 2em;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+body main .info-section .info-width-container .movie-info .movie-info-middle .p-info {
+  color: white;
+}
+body main .info-section .info-width-container .movie-info .movie-info-middle button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 200;
+  display: flex;
+  gap: 0.3em;
+  cursor: pointer;
+}
+body main .info-section .info-width-container .movie-info .description {
+  color: #787878;
+}/*# sourceMappingURL=style.css.map */
