@@ -104,7 +104,7 @@ document.addEventListener('click', async function(event) {
 })
 
 async function renderMovies() {
-    const res1 = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${searchEl.value}`)
+    const res1 = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${searchEl.value}`)
     const data1 = await res1.json()
     const moviesArray = data1.Search
 
@@ -113,7 +113,7 @@ async function renderMovies() {
     if(moviesArray){
         movieListArray = moviesArray.map(async (movie) => {
             //will have to figure out how to implement full plot later
-            const res2 = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${movie.imdbID}&plot=short`)
+            const res2 = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${movie.imdbID}&plot=short`)
             const data2 = await res2.json()
             console.log(data2)
             return ({

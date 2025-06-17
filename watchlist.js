@@ -40,7 +40,7 @@ if(watchList.length > 0){
 //asyncronous function for fetching watchlist data and displaying it
 async function fetchFunction() {
     moviesArray = watchList.map(async (movie) => {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${movie}&plot=short`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${movie}&plot=short`)
     const data = await res.json()
 
     return ({
